@@ -8,7 +8,7 @@ public class Main {
         Huerto huerto = new Huerto(5);
 
         Granjero granjero = new Granjero("Alberto", 5, 2,huerto);
-        Consumidor consumidor = new Consumidor("Joel", 5, 2, huerto);
+        Consumidor consumidor = new Consumidor("Joel", 5, 5, huerto);
 
         granjero.start();
         consumidor.start();
