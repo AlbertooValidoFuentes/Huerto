@@ -7,8 +7,10 @@ public class Main {
 
         Huerto huerto = new Huerto(5);
 
-        Granjero granjero = new Granjero("Alberto", 5, 2,huerto);
+        Granjero granjero = new Granjero("Alberto", 5, 5,huerto);
         Consumidor consumidor = new Consumidor("Joel", 5, 5, huerto);
+        
+        granjero.setPriority(10);
 
         granjero.start();
         consumidor.start();
